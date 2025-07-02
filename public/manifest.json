@@ -1,0 +1,21 @@
+{
+  "name": "Casa Fallas",
+  "short_name": "Fallas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d47a1",
+  "description": "Diagnóstico técnico a partir de fallas electrónicas",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
