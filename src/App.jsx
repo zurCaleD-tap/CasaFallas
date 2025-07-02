@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
+import "./App.css";
 
 export default function App() {
   const [fallas, setFallas] = useState([]);
@@ -34,10 +35,10 @@ export default function App() {
   );
 
   return (
-    <div style={{ maxWidth: 800, margin: '40px auto', fontFamily: 'sans-serif' }}>
+    <div className="container">
       <h1>Casa Fallas</h1>
 
-      <div style={{ marginBottom: 20 }}>
+      <div className="form-group">
         <label>Dispositivo:</label>
         <select onChange={(e) => setDispositivoSeleccionado(e.target.value)}>
           <option value="">Seleccione</option>
@@ -48,7 +49,7 @@ export default function App() {
       </div>
 
       {dispositivoSeleccionado && (
-        <div style={{ marginBottom: 20 }}>
+        <div className="form-group">
           <label>Falla:</label>
           <select onChange={(e) => setFallaSeleccionada(e.target.value)}>
             <option value="">Seleccione</option>
@@ -60,7 +61,7 @@ export default function App() {
       )}
 
       {resultado && (
-        <div style={{ background: '#f0f0f0', padding: 20 }}>
+        <div className="resultado">
           <p><strong>Diagnóstico:</strong> {resultado.diagnostico}</p>
           <p><strong>Solución:</strong> {resultado.solucion}</p>
         </div>
