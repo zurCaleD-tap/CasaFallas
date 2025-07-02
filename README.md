@@ -20,3 +20,4 @@ App web interactiva para cargar un archivo Excel (.xlsx) y consultar fallas téc
 - **GitHub Pages**:
   ```bash
   npm run deploy
+  ```
