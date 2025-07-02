@@ -1,23 +1,18 @@
-# 🛠️ Diagnóstico de Fallas App
+# Casa Fallas (Web App)
 
-App web interactiva para cargar un archivo Excel (.xlsx) y consultar fallas técnicas por dispositivo y síntoma.
+App de diagnóstico técnico con carga automática de archivo Excel (`fallas.xlsx`), interfaz agradable y capacidad de instalación como app (PWA).
 
-## 🚀 Cómo usar
+## Ejecutar en local
 
-1. Carga un archivo Excel desde tu PC.
-2. Selecciona un dispositivo y luego la falla.
-3. La app muestra diagnóstico y solución.
+```bash
+npm install
+npm run dev
+```
 
-## 👩‍💻 Tecnologías
+## Desplegar en Vercel
 
-- React + Vite
-- XLSX.js
-- Tailwind UI components (opcional)
+1. Sube este repositorio a GitHub.
+2. Conéctalo desde [https://vercel.com](https://vercel.com).
+3. ¡Listo!
 
-## 🌐 Despliegue
-
-- **Vercel (recomendado)**: simplemente conecta tu repo.
-- **GitHub Pages**:
-  ```bash
-  npm run deploy
-  ```
+---
