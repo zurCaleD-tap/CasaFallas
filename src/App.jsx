@@ -53,7 +53,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>Casa Fallas</h1>
+      <h1>Caza Fallas</h1>
 
       {loading && <p className="spinner">Cargando archivo...</p>}
       {error && <p className="error">{error}</p>}
