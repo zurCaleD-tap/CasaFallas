@@ -1,0 +1,5 @@
+DISPOSITIVO,FALLA,DIAGNOSTICO,SOLUCION,IMAGEN,VIDEO
+MONITOR,Pantalla negra,Sin señal de video,"Revisar cable HDMI y la entrada seleccionada",/imagenes/pantalla_negra.jpg,https://www.youtube.com/watch?v=abc123
+IMPRESORA,No imprime,Cartucho de tinta vacío,Reemplazar cartucho,/imagenes/cartucho_vacio.jpg,
+ROUTER,Sin conexión,Router sin energía,Verificar el cable de alimentación,,https://www.youtube.com/watch?v=def456
+
