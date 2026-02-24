@@ -1,0 +1,137 @@
+.search-container {
+  padding: 1.5rem 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.search-wrapper {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.search-wrapper.focused {
+  transform: scale(1.02);
+}
+
+.search-input {
+  width: 100%;
+  padding: 1.3rem 1.5rem 1.3rem 4rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 60px;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--neon-blue);
+  transition: all 0.3s;
+}
+
+.search-wrapper.focused .search-icon {
+  transform: translateY(-50%) scale(1.1);
+  color: var(--neon-purple);
+}
+
+.search-clear {
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.search-clear:hover {
+  color: var(--neon-blue);
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.search-glow {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+  border-radius: 60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: -1;
+}
+
+.search-wrapper.focused .search-glow {
+  opacity: 0.3;
+}
+
+.search-hints {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.hint-item {
+  padding: 0.3rem 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.hint-item:hover {
+  border-color: var(--neon-blue);
+  color: var(--neon-blue);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-container {
+    padding: 1rem;
+  }
+  
+  .search-input {
+    padding: 1rem 1rem 1rem 3.5rem;
+    font-size: 1rem;
+  }
+  
+  .search-hints {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .hint-item {
+    font-size: 0.7rem;
+  }
+}
